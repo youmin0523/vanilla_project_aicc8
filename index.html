@@ -15,9 +15,10 @@
 
     <!-- CSS Files Link -->
     <!-- Reset File -->
-    <link rel="stylesheet" href="CSS/style.css">
-    <!-- Main File -->
     <link rel="stylesheet" href="CSS/normalize.css">
+    <!-- Main File -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/header.css">
     <!-- Responsive File -->
     <link rel="stylesheet" href="CSS/media.css">
 </head>
@@ -48,7 +49,7 @@
                     </div>
 
                     <!-- 10 -->
-                     <ul class="info">
+                    <ul class="info">
                         <!-- 11 -->
                         <li class="sns">
                             <!-- 14 -->
@@ -65,8 +66,25 @@
                         <li class="cart"><a href="#"><i class="ri-shopping-cart-line"></i><!--18 카트 그림 옆에 숫자 넣기--><em>(0)</em></a></li> <!-- remixicon에 검색 후 svg 복사 붙여넣기 -->
                         <!-- 13 -->
                         <li class="user"><a href="#"><i class="ri-user-3-fill"></i></a></li> <!-- remixicon에 검색 후 svg 복사 붙여넣기 -->
-                     </ul>
+                    </ul>
+
+                    <!-- 40 -->
+                    <div class="mobile-btn-wrapper">
+                        <!-- 41 -->
+                         <!-- 기존 mobile-btn 에서 code share 자료를 header.css에 붙여넣기 한 후 mobile-btn active로 변경함 -->
+                        <div class="mobile-btn not-active">
+                            <!-- 42 -->
+                            <span class="bar-line"></span>
+                            <span class="bar-line"></span>
+                            <span class="bar-line"></span>
+                        </div>
+
+                    </div>
                 </div>
+
+                <!-- 43 -->
+                <div class="mobile-menus"></div>
+
             </header>
         </div>
 
@@ -83,13 +101,107 @@
                 <!-- 25 --> <!-- 26 : class="common-button" 추가하기-->
                 <a href="#" class="common-button">Shop Now</a>
             </div>
+
+            <!-- 43 -->
+            <div class="overlay"></div>
         </section>
+
+
+        <!-- Meet Section -->
+        <!-- 27 -->
+        <section class="meet-section section">
+            <!-- 28 -->
+            <div class="container">
+                <!-- 29 -->
+                <div class="meet-wrapper"> 
+                    <!-- 30 -->
+                    <div class="meet-text-box">
+                        <!-- 32 -->
+                        <h4>MEET THE SOAPLY MASTER</h4>
+                        <!-- 33 -->
+                        <p>가슴 속에 하나 둘 새겨지는 별을 이제 다 못 헤는 것은 쉬이 아침이 오는 까닭이요, 내일 밤이 남은 까닭이요, 아직 나의 청춘이 다하지 않은 까닭입니다. 별 하나에 추억과 별 하나에 사랑과 별 하나에 쓸쓸함과 별 하나에 동경과 별 하나에 시와 별 하나에 어머니, 어머니,</p>
+                        <!-- 34 -->
+                        <span>윤동주, '별 헤는 밤' 중...</span>
+                    </div>
+                    
+                    <!-- 31 -->
+                    <div class="meet-image-box">
+                        <!-- 35 -->
+                        <div class="meet-left-image">
+                            <!-- 37 -->
+                             <img src="images/about-image-1.jpeg" alt="">
+                            <!-- 38 -->
+                            <img src="images/about-image-3.jpeg" alt="">
+                        </div>
+                        <!-- 36 -->
+                        <div class="meet-right-image">
+                            <!-- 39 -->
+                            <img src="images/about-image-2.jpeg" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- Feature Section -->
+        <!-- 44 -->
+        <section class="feature-section section">
+            <!-- 45 -->
+            <div class="container">
+                <!-- 46 -->
+                <div class="features">
+                    <!-- 47 -->
+                    <div class="feature">
+                        <!-- 50 -->
+                        <div class="feature-icon">
+                            <!-- 53 -->
+                            <img src="images/about-icon-1.svg" alt="feature icon">
+                        </div>
+                        <!-- 51 -->
+                        <h4>For All Skin Types</h4>
+                        <!-- 52 -->
+                        <p>류국멀 친악훤이의 전으에 잔깟 어오둔데 갤기개일라 홓디의 타산노를. 흍젼 쇤휴뒨러라니 다애랩죡개쉰 합재엄호로 나디츠필 마우였다.</p>
+                    </div>
+                    
+                    <!-- 48 -->
+                    <div class="feature ">
+                        <div class="feature-icon">
+                        <!-- 56 -->
+                        <img src="images/about-icon-2.svg" alt="feature icon">
+                        </div>
+                        <!-- 54 -->
+                        <h4>100% Organic</h4>
+                        <!-- 55 -->
+                        <p>손살아 원비석고, 씰한 갸닌입니다 꼴훌 리깊개으 딜낀만은 랄자이가 딘너 래머어 교우다. 가멀진다면 세호아는 저이눔스에서 개구남두다, 난과꽁을 진귄얀 다욧을.</p>
+                    </div>
+
+                    <!-- 49 -->
+                    <div class="feature">
+                        <div class="feature-icon">
+                        <!-- 59 -->
+                        <img src="images/about-icon-3.svg" alt="feature icon">
+                        </div>
+                        <!-- 57 -->
+                        <h4>Cuelty-Free</h4>
+                        <!-- 58 -->
+                        <p>자조뇰이는 뱁웅응아옹을 오애르벅 눋빗고가패비의 힝이, 와렁 드미대느띄남다. 봐쟌을 수서의나둔 와게는 가탄옹아 노쫑암머라타는.</p>
+                    </div>
+                </div>
+                    
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
 
     <!-- Scroll Reveal Plugin -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- Main Scripts -->
+    <script src="js/header.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/request.js"></script>
 </body>

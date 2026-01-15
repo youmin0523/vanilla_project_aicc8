@@ -1,0 +1,186 @@
+/* 1 */
+@media screen and (max-width: 980px) {
+    .common-button {
+        font-size: var(--fs-14);
+    }
+
+    /* Header Styles */
+    /* 2 */
+    header {
+        background: #fff;
+        border-bottom: 1px solid var(--color-gray-d);
+    }
+
+    /* 4 */
+    header .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* 3 */ /* 6 .logo -> .logo, .mobile-btn-wrapper 로 변경*/
+    header .container > *:not(.logo, .mobile-btn-wrapper) {
+        display: none;
+    }
+
+    /* 5 */
+    header .logo{
+        justify-content: flex-start;
+    }
+
+    /* header.css 45-1 이후 */
+    /* 6 */
+    header .mobile-btn {
+        display: block;
+    }
+
+    /* header.css 46 이후 */
+    /* 7 */
+    header .mobile-menus {
+        display: block;
+        position: absolute;
+        /* 10-2 */
+        /* 기존 top: 100% 에서 101%로 변경 */
+        top: 101%;
+        width: var(--ls-full);
+        background: #fff;
+        box-shadow: 0 1px 3px var(--color-gray-d);
+        
+        /* 12 */
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s
+    }
+
+    /* 8 */
+    header .mobile-menus .nav-lists {
+        display: block;
+    }
+
+    /* 9 */
+    header .mobile-menus .nav-lists li {
+        text-align: center;
+        padding: 0;
+    }
+
+    /* 10 */
+    /* header .mobile-menus .nav-lists li a 에서 header .mobile-menus .nav-lists li a, .info li a 로 변경 -> 속성을 자식에게도 포함시켜주기 위함*/
+    header .mobile-menus .nav-lists li a, .info li a {
+        display: block;
+        width: var(--ls-full);
+        font-size: var(--fs-16);
+        padding: var(--el-medium) 0;
+        border-bottom: 1px solid var(--color-gray-d);
+        /* 10-1 */
+        /* border-top: 1px solid var(--color-gray-d); */
+    }
+
+    /* 11 */
+    header .mobile-menus .info {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Landing Section Styles */
+    /* 13 */
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        opacity: 0.4;
+    }
+
+    /* 15 */
+    #main-section .landing-text-box h1 {
+        text-shadow: 1px 1px 1px var(--color-gray-2);
+    }
+
+    /* 14 */
+    #main-section .landing-text-box p {
+        width: var(--ls-1-2);
+
+    }
+
+}
+
+/* 16 */
+@media screen and (max-width: 768px) {
+    /* 17 */
+    html {
+        font-size: 14px;
+    }
+
+    /* 18 */
+    .section {
+        padding: var(--el-section-small);
+    }
+
+    /* 19 */
+    .container {
+        padding: 0 var(--el-medium);
+    }
+
+    /* Meet Section Styles */
+    /* 25 */
+    .meet-section .meet-wrapper {
+        flex-direction: column;
+        row-gap: var(--el-wide);
+    }
+
+    /* 26,27,28 */
+    .meet-section .meet-text-box, .meet-section .meet-text-box p, .meet-section .meet-image-box {
+        width: var(--ls-full);
+    }
+
+}
+
+/* 20 */
+@media screen and (max-width: 501px) {
+    /* 29 */
+    .section {
+        padding: var(--el-section-mobile);
+    }
+
+    /* 21 */
+    #main-section .landing-text-box {
+        text-align: center;
+    }
+
+    /* 22 */
+    #main-section .landing-text-box h1 {
+        font-size: 1.8rem;
+    }
+
+    /* 23 */
+    #main-section .landing-text-box p {
+        width: 80%;
+        margin: auto;
+    }
+
+    /* 24 */
+    .overlay {
+        opacity: 0.7;
+
+    }
+
+    /* Meet Section Styles */
+    /* 30 */
+    .meet-section .meet-text-box p {
+        width: var(--ls-full);
+        font-size: var(--fs-16);
+    }
+    
+    /* 31 */
+    .meet-section .meet-image-box {
+        column-gap: var(--el-normal);
+    }
+
+    /* 33 */
+    .meet-section .meet-text-box span {
+        font-size: var(--fs-16);
+    }
+
+    /* 32 */
+    .meet-section .meet-left-image {
+        row-gap: var(--el-normal);
+    }
+}

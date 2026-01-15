@@ -1,0 +1,289 @@
+/* Header Styles */
+
+/* 1 */
+.header-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+/* 2 */
+header {
+    position: fixed;
+    width: var(--ls-full);
+    height: auto;
+    padding: 1.75rem 0;
+    z-index: 15; /* 겹칠 때의 순서 */
+}
+
+/* 3 */
+header.active {
+    background: #fff;
+    border-bottom: 1px solid var(--color-gray-d);
+}
+
+/* 4 */
+header .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr; /* 헤더의 내용(Home,Shop,Gallery | SOAPLY | SNS 를 2:1:2로 분할) */
+    align-items: center;
+}
+
+/* 5 */
+header .container > * {
+    display: flex;
+}
+
+/* 6 */
+header .nav-lists {
+    display: flex;
+}
+
+/* 8 */
+header .nav-lists li {
+    padding: 0 2rem 0 0; /* 위 오른쪽 아래 왼쪽 순서 */
+}
+
+/* 9 */
+header .nav-lists li a {
+    font-size: var(--fs-14);
+}
+
+/* 10 */
+/* Home,Shop,Gallery에 마우스를 갖다대면 밑줄이 뜸 */
+header .nav-lists li a:hover {
+    text-decoration: underline;
+}
+
+/* 11 */
+header .logo{
+    justify-content: center;
+}
+
+/* 12 */
+header .logo a {
+    width: 100px;
+}
+
+/* 13 */
+header .logo img {
+    width: 100%;
+}
+
+/* 14 */
+header .info {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* 17 */
+header .info li {
+    padding: 0 0 0 1rem;
+    display: flex;
+}
+
+/* 18 */
+header .info li a {
+    font-size: var(--fs-14);
+}
+
+/* 7 */
+header .info li.sns ul {
+    display: flex;
+}
+
+/* 15 */
+header .info li.sns li a {
+    width: 20px;
+}
+
+/* 16 */
+header .info li.sns li a img {
+    width: 100%;
+}
+
+/* 19 */
+header li.cart a {
+    display: flex;
+    align-items: center;
+    background: var(--color-black);
+    color: #fff;
+    border-radius: 0.25rem;
+    padding: 0 0.5rem; /*위아래: 0, 좌우: 0.25rem*/
+    height: 1.8rem;
+}
+
+/* 20 */
+header li.cart a em{
+    font-style: normal; /* em을 사용해서 기울여졌던 글씨를 다시 원래대로 돌림 */
+}
+
+/* 22 */
+header li.user {
+    padding-left: 0.25rem;
+}
+
+/* 21 */
+header li.user a {
+    background: transparent;
+    border: 1px solid var(--color-black);
+    border-radius: 0.25rem;
+    padding: 0 0.5rem;
+    height: 1.8rem;
+    font-size: var(--fs-18);
+    display: flex;
+    align-items: center;
+}
+
+/* 41 (style.css에서 header.css로 분리함) */
+header .mobile-btn {
+    width: 1.8rem;
+    cursor: pointer;
+
+    /* 45-1 */
+    display: none;
+}
+
+/* 43 */
+header .mobile-btn-wrapper {
+    justify-content: flex-end; /* mobile-btn이 우측 끝으로 이동함 */
+}
+
+/* 42 */
+header .mobile-btn span.bar-line {
+    display: block; /* span은 inline이기 때문에 block으로 작성*/
+    width: var(--ls-full);
+    height: 2px;
+    background: var(--color-gray-3);
+    position: relative;
+    margin: auto;
+    border-radius: 2px;
+}
+
+/* 44 */
+/* 2px mobile-btn선이 세 개가 겹쳐있던 상황이었으니 중간(2번째)을 기준으로 위아래 5px margin을 부여함*/
+header .mobile-btn span.bar-line:nth-child(2) {
+    margin: 5px 0;
+}
+
+/* 45 */
+/* code-share 에서 가져옴 */
+.mobile-btn.active span.bar-line:nth-child(1) {
+    animation:ease 0.5s top forwards;
+}
+
+.mobile-btn.active span.bar-line:nth-child(2) {
+    animation:ease 0.5s scaled forwards;
+}
+
+.mobile-btn.active span.bar-line:nth-child(3) {
+    animation:ease 0.5s bottom forwards;
+}
+ 
+.mobile-btn.not-active span.bar-line:nth-child(1) {
+    animation:ease 0.5s top-back forwards;
+}
+
+.mobile-btn.not-active span.bar-line:nth-child(2) {
+    animation:ease 0.5s scaled-back forwards;
+}
+
+.mobile-btn.not-active span.bar-line:nth-child(3) {
+    animation:ease 0.5s bottom-back forwards;
+}
+
+
+@keyframes top {
+  0% {
+    top:0; 
+    transform:rotate(0);
+}
+
+  50% {
+    top:10px; 
+    transform:rotate(0);
+}
+
+  100% {
+    top:10px; 
+    transform:rotate(40deg);
+}
+ }
+
+ @keyframes scaled {
+  0% {
+    transform:scale(0);
+}
+
+  100% {
+    transform:scale(0);
+}
+ }
+
+ @keyframes bottom {
+  0% {
+    bottom:0; 
+    transform:rotate(0);
+}
+
+  50% {
+    bottom:10px; 
+    transform:rotate(0);
+}
+
+  100% {
+    bottom:5px; 
+    transform:rotate(140deg);
+}
+ }
+ 
+ @keyframes top-back {
+  0% {
+    top:10px; 
+    transform:rotate(40deg);
+}
+
+  50% {
+    top:10px; 
+    transform:rotate(0);
+}
+
+  100% {
+    top:0; 
+    transform:rotate(0);
+}
+ }
+
+ @keyframes scaled-back {
+  0% {
+    transform:scale(0);
+}
+
+  50% {
+    transform:scale(0);
+}
+
+  100% {
+    transform:scale(1);
+}
+ }
+
+ @keyframes bottom-back {
+  0% {
+    bottom:5px; 
+    transform:rotate(140deg);
+}
+
+  50% {
+    bottom:10px; 
+    transform:rotate(0);
+}
+  100% {
+    bottom:0; 
+    transform:rotate(0);
+}
+ }
+
+ /* 46 */
+ .mobile-menus {
+    display: none;
+ }
