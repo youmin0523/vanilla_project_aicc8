@@ -131,6 +131,19 @@
         width: var(--ls-full);
     }
 
+
+    /* Feature Section Styles */
+    /* 34 */
+    .feature-section .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 35 */
+    .feature-section .feature {
+        width: 60%;
+    }
+
 }
 
 /* 20 */
@@ -182,5 +195,12 @@
     /* 32 */
     .meet-section .meet-left-image {
         row-gap: var(--el-normal);
+    }
+
+
+    /* Feature Section Styles */
+    /* 36 */
+    .feature-section .feature {
+        width: 90%;
     }
 }
