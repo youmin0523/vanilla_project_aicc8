@@ -149,7 +149,8 @@ input, textarea, button {
     border-radius: 0.25rem;
     font-size: var(--fs-14);
     /* 13 */
-    width: fit-content
+    /* Slider-section의 자세히 보기 아이콘의 사이즈를 맞추기 위해 width: fit-content를 추가함 */
+    width: fit-content;
 }
 
 /* 12 */
