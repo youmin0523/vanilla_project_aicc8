@@ -100,6 +100,30 @@
 
     }
 
+    /* Slider Section Styles */
+    /* 40 */
+    .slider-section .swiper-slide > div {
+        height: 280px;
+    }
+
+    /* 37 */
+    .slider-section .slider-text h4 {
+        font-size: var(--fs-20);
+    }
+
+    /* 38 */
+    .slider-section .slider-nav {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* 39 */
+    .swiper-button-next, .swiper-button-prev {
+        svg {
+            height: 40%;
+            width: 40%;
+        }
+    }
 }
 
 /* 16 */
@@ -144,6 +168,34 @@
         width: 60%;
     }
 
+    /* Slider Section Styles */
+    /* 41 */
+    .slider-section .slider-nav {
+        display: none;
+    }
+
+    /* 42 */
+    .slider-section .swiper-slide {
+        flex-direction: column;
+    }
+
+    /* 43 */
+    .slider-section .swiper-slide > div {
+        width: 80%;
+        margin: auto;
+    }
+
+    /* 44 */
+    .slider-section .slider-text {
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Offers Section Style */
+    /* 46 */
+    .offers-section .product-frame {
+        width: var(--ls-1-2);   
+    }
 }
 
 /* 20 */
@@ -202,5 +254,17 @@
     /* 36 */
     .feature-section .feature {
         width: 90%;
+    }
+
+    /* Slider Section Styles */
+    /* 45 */
+    .slider-section .swiper-slide > div {
+        width: 90%;
+    }
+
+    /* Offers Section Style */
+    /* 47 */
+    .offers-section .product-frame {
+        width: var(--ls-full);   
     }
 }

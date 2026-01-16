@@ -28,21 +28,23 @@ sr.reveal('.meet-wrapper img, .feature', {
 
 
 /** Swiper Slider Effect **/
-/* 11 */
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  loop: true,
+/* 12 */
+setTimeout(() => {
+    /* 11 */
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
+}, 300);
