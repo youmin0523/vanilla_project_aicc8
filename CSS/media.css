@@ -140,6 +140,17 @@
     .review-section .review-item p {
         -webkit-line-clamp: 3;
     }
+
+    /* Insta Section Styles */
+    /* 53 */
+    .insta-section .insta-wrapper {
+        column-gap: var(--el-small);
+    }
+
+    /* 54 */
+    .insta-section .insta-info h4 {
+        font-size: var(--fs-name);
+    }
 }
 
 /* 16 */
@@ -218,6 +229,17 @@
     .review-section .review-frame {
         width: var(--ls-1-2);
     }
+
+    /* Insta Section Styles */
+    /* 55 */
+    .insta-section .insta-right-image {
+        display: none;
+    }
+
+    /* 56 */
+    .insta-section .insta-wrapper {
+    grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* 20 */
@@ -294,5 +316,23 @@
     /* 52 */
     .review-section .review-frame {
         width: var(--ls-full);
+    }
+
+    /* Insta Section Styles */
+    /* 57 */
+    .insta-section .insta-wrapper {
+        grid-template-columns: 1fr;
+        row-gap: var(--el-medium);
+    }
+
+    /* 58 */
+    .insta-section .insta-info {
+        /* flex, grid 에서 사용할 수 있는 요소의 순서를 정함 */
+        order: 1;
+    }
+
+    /* 59 */
+    .insta-section .insta-left-image {
+        order: 2;
     }
 }

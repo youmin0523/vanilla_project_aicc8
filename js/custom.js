@@ -48,3 +48,18 @@ setTimeout(() => {
     },
 });
 }, 300);
+
+
+/** Fit Insta Image Height **/
+/* 13 */
+const instaImageHeight = document.querySelector('#h').scrollHeight;
+/* 14 */
+document.querySelector('#fh').style.height = instaImageHeight + 'px';
+
+/* 15 */
+window.addEventListener('resize', () => {
+    /* 16 */
+    const instaImageHeight = document.querySelector('#h').scrollHeight;
+    /* 17 */
+    document.querySelector('#fh').style.height = instaImageHeight + 'px';
+});

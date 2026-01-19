@@ -429,3 +429,77 @@
     font-style: normal;
     font-size: var(--fs-small-text);
 }
+
+/* Insta Section Styles */
+/* 75 */
+.insta-section .insta-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* 76 */
+.insta-section .insta-image {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0.25rem;
+}
+
+/* 77 */
+.insta-section .insta-image > div {
+    width: calc(var(--ls-1-2) - 0.25rem);
+}
+
+/* 78 */
+.insta-section .insta-image img {
+    width: var(--ls-full);
+    border-radius: 0.25rem;
+    object-fit: cover;
+}
+
+/* 79 */
+.insta-section .insta-grid-2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+/* 80 */
+.insta-section .insta-left-image .insta-grid-1 {
+    align-items: center;
+    display: flex;
+}
+
+/* 81 */
+.insta-section .insta-right-image .insta-grid-1 {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* 82 */
+.insta-section .insta-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: var(--el-normal);
+}
+
+/* 83 */
+.insta-section .insta-info h4 {
+    font-size: var(--fs-title);
+    font-weight: var(--fw-400);
+}
+
+/* 84 */
+.insta-section .insta-info .insta-id {
+    font-size: var(--fs-small-text);
+    display: flex;
+    align-items: center;
+    column-gap: var(--el-small);
+}
+
+/* 85 */
+.insta-section .insta-info .insta-id i {
+    font-size: var(--fs-20);
+}

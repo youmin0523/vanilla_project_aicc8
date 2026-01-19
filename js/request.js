@@ -76,7 +76,7 @@ async function getProducts(n, wrapper, template) {
 
     try { // 요청 시도
         const data = await getRequest(getProductsUrl);
-        console.log(data);
+        // console.log(data);
 
         /* 6 */
         let dataElement = '';
