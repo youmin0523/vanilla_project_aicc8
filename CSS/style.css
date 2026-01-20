@@ -22,7 +22,8 @@
 
     /* 25-2 */
     position: absolute;
-    object-fit: cover; /* object-fit:cover는 꽉 채우고 이미지가 커지는 부분은 넘치게 만드는 것 */
+    object-fit: cover;
+    /* object-fit:cover는 꽉 채우고 이미지가 커지는 부분은 넘치게 만드는 것 */
 }
 
 /* 26 */
@@ -33,7 +34,8 @@
 /* 27 */
 #main-section .landing-text-box h1 {
     font-size: var(--fs-title);
-    line-height: 1.4; /* 단위를 따로 적어주지 않으면 기본 단위는 em이다. */
+    line-height: 1.4;
+    /* 단위를 따로 적어주지 않으면 기본 단위는 em이다. */
     font-weight: var(--fw-400);
 }
 
@@ -71,9 +73,10 @@
     font-size: var(--fs-18);
     line-height: 1.8;
     width: 80%;
-    padding: var(--el-wide) 0 var(--el-medium); /* 위에는 넓게 좌우는 없고, 아래는 미디움으로*/
+    padding: var(--el-wide) 0 var(--el-medium);
+    /* 위에는 넓게 좌우는 없고, 아래는 미디움으로*/
     color: var(--color-gray-3);
-    
+
     /* 37-1 */
     position: relative;
 }
@@ -95,7 +98,7 @@
     padding-top: var(--el-medium);
     display: flex;
     align-items: center;
-    
+
     /* 40-1 */
     column-gap: 1rem;
 }
@@ -202,7 +205,7 @@
 }
 
 /* 42 */
-.slider-section .swiper-slide > div {
+.slider-section .swiper-slide>div {
     width: var(--ls-1-2);
     padding: 0 var(--el-medium);
     height: 320px;
@@ -212,7 +215,7 @@
 }
 
 /* 43 */
-.slider-section .swiper-slide > div > img {
+.slider-section .swiper-slide>div>img {
     width: var(--ls-full);
     position: absolute;
     top: 50%;
@@ -275,11 +278,12 @@
 }
 
 /* 52 */
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
     svg {
         height: 50%;
         width: 50%;
-   }
+    }
 }
 
 /* 53 */
@@ -293,7 +297,10 @@
 }
 
 /* 55 */
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
     bottom: -2.5rem;
 }
 
@@ -445,7 +452,7 @@
 }
 
 /* 77 */
-.insta-section .insta-image > div {
+.insta-section .insta-image>div {
     width: calc(var(--ls-1-2) - 0.25rem);
 }
 
@@ -520,11 +527,65 @@ footer .footer-upper {
 }
 
 /* 88 */
-footer .footer-upper .footer-info {
-    display: flex;
+footer .footer-logo {
+    width: 100px;
 }
 
 /* 89 */
-footer .footer-upper .footer-info .footer-nav {
+footer .footer-logo img {
+    width: var(--ls-full);
+}
+
+/* 90 */
+footer .footer-info {
     display: flex;
+}
+
+/* 91 */
+footer .footer-info>ul {
+    display: flex;
+}
+
+/* 92 */
+footer .footer-nav a {
+    font-size: var(--fs-small-text);
+    padding: var(--el-medium);
+}
+
+/* 93 */
+footer .footer-sns li a {
+    width: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* 95 */
+footer .footer-sns li {
+    padding-left: 1rem;
+}
+
+/* 94 */
+footer .footer-sns li a img {
+    width: var(--ls-full);
+}
+
+/* 96 */
+footer .footer-line {
+    width: 100%;
+    height: 1px;
+    background: var(--color-gray-3);
+    margin: var(--el-medium) 0;
+}
+
+/* 97 */
+footer .footer-lower {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--fs-small-text);
+    align-items: center;
+}
+
+/* 98 */
+footer .footer-lower a {
+    text-decoration: underline;
 }

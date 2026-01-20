@@ -16,13 +16,14 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    /* 3 */ /* 6 .logo -> .logo, .mobile-btn-wrapper 로 변경*/
-    header .container > *:not(.logo, .mobile-btn-wrapper) {
+    /* 3 */
+    /* 6 .logo -> .logo, .mobile-btn-wrapper 로 변경*/
+    header .container>*:not(.logo, .mobile-btn-wrapper) {
         display: none;
     }
 
     /* 5 */
-    header .logo{
+    header .logo {
         justify-content: flex-start;
     }
 
@@ -43,7 +44,7 @@
         width: var(--ls-full);
         background: #fff;
         box-shadow: 0 1px 3px var(--color-gray-d);
-        
+
         /* 12 */
         height: 0;
         overflow: hidden;
@@ -63,7 +64,8 @@
 
     /* 10 */
     /* header .mobile-menus .nav-lists li a 에서 header .mobile-menus .nav-lists li a, .info li a 로 변경 -> 속성을 자식에게도 포함시켜주기 위함*/
-    header .mobile-menus .nav-lists li a, .info li a {
+    header .mobile-menus .nav-lists li a,
+    .info li a {
         display: block;
         width: var(--ls-full);
         font-size: var(--fs-16);
@@ -102,7 +104,7 @@
 
     /* Slider Section Styles */
     /* 40 */
-    .slider-section .swiper-slide > div {
+    .slider-section .swiper-slide>div {
         height: 280px;
     }
 
@@ -118,7 +120,8 @@
     }
 
     /* 39 */
-    .swiper-button-next, .swiper-button-prev {
+    .swiper-button-next,
+    .swiper-button-prev {
         svg {
             height: 40%;
             width: 40%;
@@ -155,6 +158,7 @@
 
 /* 16 */
 @media screen and (max-width: 768px) {
+
     /* 17 */
     html {
         font-size: 14px;
@@ -178,7 +182,9 @@
     }
 
     /* 26,27,28 */
-    .meet-section .meet-text-box, .meet-section .meet-text-box p, .meet-section .meet-image-box {
+    .meet-section .meet-text-box,
+    .meet-section .meet-text-box p,
+    .meet-section .meet-image-box {
         width: var(--ls-full);
     }
 
@@ -207,7 +213,7 @@
     }
 
     /* 43 */
-    .slider-section .swiper-slide > div {
+    .slider-section .swiper-slide>div {
         width: 80%;
         margin: auto;
     }
@@ -221,7 +227,7 @@
     /* Offers Section Style */
     /* 46 */
     .offers-section .product-frame {
-        width: var(--ls-1-2);   
+        width: var(--ls-1-2);
     }
 
     /* Review Section Styles */
@@ -238,12 +244,13 @@
 
     /* 56 */
     .insta-section .insta-wrapper {
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 /* 20 */
 @media screen and (max-width: 501px) {
+
     /* 29 */
     .section {
         padding: var(--el-section-mobile);
@@ -277,7 +284,7 @@
         width: var(--ls-full);
         font-size: var(--fs-16);
     }
-    
+
     /* 31 */
     .meet-section .meet-image-box {
         column-gap: var(--el-normal);
@@ -302,14 +309,14 @@
 
     /* Slider Section Styles */
     /* 45 */
-    .slider-section .swiper-slide > div {
+    .slider-section .swiper-slide>div {
         width: 90%;
     }
 
     /* Offers Section Style */
     /* 47 */
     .offers-section .product-frame {
-        width: var(--ls-full);   
+        width: var(--ls-full);
     }
 
     /* Review Section Styles */
@@ -334,5 +341,42 @@
     /* 59 */
     .insta-section .insta-left-image {
         order: 2;
+    }
+
+    /* Footer Section Styles */
+    /* 60 */
+    footer .footer-upper {
+        flex-direction: column;
+    }
+
+    /* 61 */
+    footer .footer-logo {
+        margin-bottom: var(--el-medium);
+    }
+
+    /* 62 */
+    footer .footer-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: var(--el-normal);
+    }
+
+    /* 64 */
+    footer .footer-sns {
+        column-gap: 0.5rem;
+    }
+
+    /* 63 */
+    footer .footer-sns li {
+        padding: 0;
+    }
+
+    /* 65 */
+    footer .footer-lower {
+        flex-direction: column;
+        row-gap: var(--el-normal);
+        align-items: center;
+        text-align: center;
     }
 }
